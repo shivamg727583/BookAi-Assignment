@@ -1,0 +1,129 @@
+body {
+    background-color: #F3F4F6;
+    color: #1F2937;
+  }
+  
+  header {
+    background-color: #E5E7EB;
+  }
+
+
+#menu ul{
+    display: flex ;
+    align-items: center;
+    gap: 25px;
+    
+}
+#menu ul a{
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+#menu-btn{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 999;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+}
+#menu-btn i{
+    font-size: 30px;
+}
+ .header h1{
+    font-size: 2.5rem;
+}
+
+  nav a {
+    color: white;
+  }
+
+  .dark-theme {
+    background-color: #0F172A;
+    color: white;
+  }
+  
+  .dark-theme header {
+    background-color: #1E293B;
+  }
+  
+  .dark-theme nav a {
+    color: white;
+  }
+  
+  .dark-theme nav a:hover {
+    color: #A5B4FC;
+  }
+  
+ 
+ 
+  @media (max-width:950px) {
+  .header  h1{
+        font-size: 1.8rem;
+    }
+    #menu ul{
+       
+        gap: 20px;
+    }
+    ul a{
+        font-size: 1rem;
+    }
+  }
+ 
+  @media (max-width: 768px) {
+   .header h1{
+        font-size: 1.5rem;
+    }
+
+    #menu-btn{
+        display: flex;
+    }
+  
+    #menu{
+        border-radius: 30px;
+      width: 100%;
+      height: max-content;
+      position: fixed;
+      top: 0px;
+      left: 150%;
+      background:#1E293B ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    box-shadow: 0 1px 1px 1px #2d3a50d0;
+    margin-bottom: 15px;
+   
+
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      height: 80%;
+      padding: 20px 0;
+    }
+    nav a{
+        font-size: 20px;
+    }
+  }
+  @media (max-width: 468px) {
+   h1{
+        font-size: 1.4rem;
+    }
+    
+   }
+
+
+   /* Add transition for smooth theme switching */
+body, header, nav, a {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  

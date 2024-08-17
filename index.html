@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <title>Pricing</title>
+</head>
+<body class=" w-screen text-white">
+    
+  <header class="bg-[#6366F1]  px-4 sm:px-10  fixed top-0 left-0 w-full">
+    <div class="header flex justify-between items-center py-6">
+      <h1>Book Generator API</h1>
+      <div id="menu-btn" class="">
+        <i class="ri-menu-line"></i>
+      </div>
+      <nav id="menu" >
+        <ul class="flex  items-center ">
+          <li><a href="#" class="hover:text-[#A5B4FC] transition-colors">Overview</a></li>
+          <li><a href="#" class="hover:text-[#A5B4FC] transition-colors">Authentication</a></li>
+          <li><a href="#" class="hover:text-[#A5B4FC] transition-colors">Endpoints</a></li>
+          <li><a href="#" class="hover:text-[#A5B4FC] transition-colors">Tutorial</a></li>
+          <li><a href="#" class="hover:text-[#A5B4FC] transition-colors">Code Examples</a></li>
+          <li><a href="#" class="hover:text-[#A5B4FC] transition-colors">Pricing</a></li>
+          <button id="theme-toggle" class=""><i class="ri-sun-fill"></i></button>
+        </ul>
+      
+         
+      </nav>
+    
+
+    </div>
+  </header>
+  
+  <main class="mt-28">
+    <section id="pricing" class="bg-[#1E293B] text-white py-8 max-w-screen-xl mx-auto mt-10 rounded-lg shadow-lg shadow-zinc-400">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-[#A5B4FC] mb-4">API Pricing</h2>
+        <p class="mb-6">Our API pricing is based on the model used and the number of tokens processed. Here's a breakdown of the costs:</p>
+        
+        <div class="overflow-x-auto border border-gray-700 rounded-lg">
+          <table class="w-full text-left">
+            <thead class="bg-[#6366F1]">
+              <tr>
+                <th class="py-2 px-4">API</th>
+                <th class="py-2 px-4">Model</th>
+                <th class="py-2 px-4">Price per 1K tokens</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-700">
+                <td class="py-2 px-4">OpenAI</td>
+                <td class="py-2 px-4">GPT-3.5</td>
+                <td class="py-2 px-4">$0.002</td>
+              </tr>
+              <tr class="border-b border-gray-700">
+                <td class="py-2 px-4">OpenAI</td>
+                <td class="py-2 px-4">GPT-4</td>
+                <td class="py-2 px-4">$0.03</td>
+              </tr>
+              <tr class="border-b border-gray-700">
+                <td class="py-2 px-4">Together AI</td>
+                <td class="py-2 px-4">Llama-2-70b</td>
+                <td class="py-2 px-4">$0.0008</td>
+              </tr>
+              <tr class="border-b border-gray-700">
+                <td class="py-2 px-4">Together AI</td>
+                <td class="py-2 px-4">Llama-2-13b</td>
+                <td class="py-2 px-4">$0.0006</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+        <div class="mt-8">
+          <h3 class="text-2xl font-semibold text-[#A5B4FC] mb-4">Token Estimation</h3>
+          <p class="mb-6">On average, 1 token is approximately 4 characters or 0.75 words. For precise pricing, we recommend using our token calculator tool.</p>
+    
+          <h3 class="text-2xl font-semibold text-[#A5B4FC] mb-4">Billing</h3>
+          <p>You will only be charged for the tokens used in generating the book. The API tracks token usage and bills accordingly. Detailed usage reports are available in your account dashboard.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
